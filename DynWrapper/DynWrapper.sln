@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynWrapper", "DynSoapWrapper\DynWrapper.csproj", "{B0D07C2A-020F-4222-B970-55E37DF2A527}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynWrapper", "DynWrapper\DynWrapper.csproj", "{B0D07C2A-020F-4222-B970-55E37DF2A527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

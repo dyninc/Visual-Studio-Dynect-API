@@ -56,7 +56,11 @@
     <Compile Include="DynectWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs" />
-    <Compile Include="Web References\net.dynect.api2\Reference.cs" />
+    <Compile Include="Service References\net.dynect.api2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -64,225 +68,910 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings" />
-    <None Include="Web References\net.dynect.api2\ActivateDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ActivateFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ActivateGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ActivateIPTrackResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ActivateLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ActivateRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ActivateSecondaryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\AddDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateAAAARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateACLResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateCDNManagerResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateCNAMERecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateContactResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateDDNSHostResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateDNSKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateDSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateGSLBRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateHTTPRedirectResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateIPTrackResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateLoadBalancePoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateLOCRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateMXRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateNSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreatePTRRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateRPRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateRTTMRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateSecondaryZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateSRVRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateTXTRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateUpdateUserResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateUserResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\CreateZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateIPTrackResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeactivateSecondaryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteAAAARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteCNAMERecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteDNSKEYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteDSRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteKEYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteLOCRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteMXRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteNSRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneAAAARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneACLResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneCDNManagerResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneCNAMERecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneContactResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneDNSKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneDSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneGSLBRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneHTTPRedirectResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneIPTrackResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneLoadBalancePoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneLOCRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneMXRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneNSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOnePTRRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneRPRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneRTTMRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneSRVRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneTXTRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneUserResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteOneZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeletePTRRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteRPRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteSRVRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteTXTRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\DeleteZoneChangesetResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\Dynect.wsdl" />
-    <None Include="Web References\net.dynect.api2\FailoverCDNManagerResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\FreezeZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetAAAARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetACLsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetANYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetCDNManagersResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetCNAMERecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetContactsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetDDNSsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetDNSKEYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetDSRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetFailoversResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetGSLBRegionPoolEntriesResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetGSLBsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetHTTPRedirectsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetIPTracksResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetJobResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetKEYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetLoadBalancePoolEntriesResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetLoadBalancesResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetLOCRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetMXRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetNodeListResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetNSRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneAAAARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneACLResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneCDNManagerResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneCNAMERecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneContactResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneDNSKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneDSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneGSLBRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneHTTPRedirectResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneIPTrackResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneLoadBalancePoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneLOCRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneMXRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneNSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOnePTRRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneRPRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneRTTMRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneSecondaryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneSOARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneSRVRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneTXTRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneUserResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetOneZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetPTRRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetQueryStatsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetRPRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetRTTMLogsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetRTTMRegionPoolEntriesResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetRTTMRRSetsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetRTTMsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetSecondariesResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetSOARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetSRVRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetTXTRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetUsersResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetZoneChangesetResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\GetZonesResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\PruneZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\PublishZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverCDNManagerResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverGSLBIPResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverLoadBalanceIPResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverRTTMIPResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RecoverRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\Reference.map" />
-    <None Include="Web References\net.dynect.api2\ReplaceAAAARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceARecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceCNAMERecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceDNSKEYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceDSRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceKEYRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceLOCRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceMXRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceNSRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplacePTRRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceRPRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceSRVRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ReplaceTXTRecordsResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ResetDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\RetransferSecondaryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\SessionIsAliveResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\SessionKeepAliveResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\SessionLoginResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\SessionLogoutResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\ThawZoneResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateAAAARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateACLResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateCDNManagerResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateCNAMERecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateContactResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateDDNSResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateDNSKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateDSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateFailoverResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateGSLBRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateGSLBResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateHTTPRedirectResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateIPTrackResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateKEYRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateLoadBalancePoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateLoadBalanceResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateLOCRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateMXRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateNSRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdatePTRRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateRPRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateRTTMRegionPoolEntryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateRTTMResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateSecondaryResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateSOARecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateSRVRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateTXTRecordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateUserPasswordResponseType.datasource" />
-    <None Include="Web References\net.dynect.api2\UpdateUserResponseType.datasource" />
+    <None Include="Service References\net.dynect.api2\Dynect.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\net.dynect.api2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\net.dynect.api2\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\net.dynect.api2\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateDNSSECResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateIPTrackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ActivateSecondaryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddPermissionGroupPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddPermissionGroupSubgroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddPermissionGroupUsersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddPermissionGroupZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddUserForbidsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddUserGroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddUserPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.AddUserZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CheckPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateAAAARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateCDNManagerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateCNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateContactResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDDNSHostResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDHCIDRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDNSKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDNSSECResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateDSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateGSLBRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateHTTPRedirectResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateIPTrackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateLoadBalancePoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateLOCRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateMXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateNSAPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateNSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreatePermissionGroupResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreatePTRRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreatePXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateRPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateRTTMRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateSecondaryZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateSPFRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateSRVRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateSSHFPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateTXTRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateUpdateUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.CreateZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateDNSSECResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateIPTrackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeactivateSecondaryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteAAAARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteCNAMERecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteDHCIDRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteDNAMERecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteDNSKEYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteDSRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteKEYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteLOCRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteMXRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteNSAPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteNSRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneAAAARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneCDNManagerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneCNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneContactResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneDHCIDRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneDNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneDNSKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneDNSSECResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneDSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneGSLBRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneHTTPRedirectResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneIPTrackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneLoadBalancePoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneLOCRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneMXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneNSAPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneNSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOnePermissionGroupResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOnePTRRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOnePXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneRPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneRTTMRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneSPFRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneSRVRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneSSHFPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneTXTRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteOneZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeletePTRRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeletePXRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteRPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteSPFRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteSRVRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteSSHFPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteTXTRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.DeleteZoneChangesetResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.FailoverCDNManagerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.FreezeZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetAAAARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetANYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetCDNManagersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetCNAMERecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetContactsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetCustomerPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDDNSsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDHCIDRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDNAMERecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDNSKEYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDNSSECsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDNSSECTimelineResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetDSRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetFailoversResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetGSLBRegionPoolEntriesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetGSLBsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetHTTPRedirectsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetIPTracksResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetJobResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetKEYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetLoadBalancePoolEntriesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetLoadBalancesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetLOCRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetMXRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetNodeListResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetNSAPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetNSRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneAAAARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneCDNManagerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneCNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneContactResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneDHCIDRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneDNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneDNSKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneDNSSECResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneDSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneGSLBRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneHTTPRedirectResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneIPTrackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneLoadBalancePoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneLOCRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneMXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneNSAPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneNSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOnePermissionGroupResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOnePTRRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOnePXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneRPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneRTTMRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneSecondaryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneSOARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneSPFRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneSRVRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneSSHFPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneTXTRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetOneZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetPermissionGroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetPTRRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetPXRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetQueryStatsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetRPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetRTTMLogsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetRTTMRegionPoolEntriesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetRTTMRRSetsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetRTTMsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetSecondariesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetSOARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetSPFRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetSRVRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetSSHFPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetTXTRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetUserPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetUsersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetZoneChangesetResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetZoneNotesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.GetZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.PruneZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.PublishZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverCDNManagerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverGSLBIPResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverLoadBalanceIPResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverRTTMIPResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RecoverRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemovePermissionGroupPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemovePermissionGroupSubgroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemovePermissionGroupUsersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemovePermissionGroupZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemoveUserForbidsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemoveUserGroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemoveUserPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RemoveUserZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceAAAARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceARecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceCNAMERecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceDHCIDRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceDNAMERecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceDNSKEYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceDSRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceKEYRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceLOCRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceMXRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceNSAPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceNSRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplacePTRRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplacePXRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceRPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceSPFRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceSRVRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceSSHFPRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ReplaceTXTRecordsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ResetDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.RetransferSecondaryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SessionIsAliveResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SessionKeepAliveResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SessionLoginResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SessionLogoutResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetPermissionGroupPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetPermissionGroupSubgroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetPermissionGroupUsersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetPermissionGroupZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetUserForbidsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetUserGroupsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetUserPermissionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.SetUserZonesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.ThawZoneResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateAAAARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateCDNManagerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateCNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateContactResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateDDNSResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateDHCIDRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateDNAMERecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateDNSKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateDNSSECResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateDSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateFailoverResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateGSLBRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateGSLBResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateHTTPRedirectResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateIPTrackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateKEYRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateLoadBalancePoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateLoadBalanceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateLOCRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateMXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateNSAPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateNSRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdatePermissionGroupResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdatePTRRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdatePXRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateRPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateRTTMRegionPoolEntryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateRTTMResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateSecondaryResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateSOARecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateSPFRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateSRVRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateSSHFPRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateTXTRecordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateUserPasswordResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\DynSoapWrapper.net.dynect.api2.UpdateUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\net.dynect.api2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Web References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

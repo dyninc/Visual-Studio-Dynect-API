@@ -166,7 +166,7 @@ namespace DynSoapWrapper.DynClasses
         #endregion
 
         #region private members
-        private net.dynect.api2.Dynect dynectWsdl = null;
+        private net.dynect.api2.DynectClient dynectWsdl = null;
         private net.dynect.api2.SessionLoginData sessionData = null;
         #endregion
 
@@ -178,13 +178,13 @@ namespace DynSoapWrapper.DynClasses
 
         public DynectWrapper()
         {
-            dynectWsdl = new net.dynect.api2.Dynect();
+            dynectWsdl = new net.dynect.api2.DynectClient();
             sessionData = null;
         }
 
         public DynectWrapper(string customerName, string userName, string password)
         {
-            dynectWsdl = new net.dynect.api2.Dynect();
+            dynectWsdl = new net.dynect.api2.DynectClient();
             
             sessionData = null;
             SessionConnect(customerName, userName, password);
