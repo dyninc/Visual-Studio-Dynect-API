@@ -11,16 +11,16 @@ namespace CSharpDllTest
         static void Main(string[] args)
         {
             // Create a dynect wrapper object with the proper credentials
-            /*DynectWrapper wrapper = new DynectWrapper("my_customer_name", "my_user_name", "my_password");
+            DynectWrapper wrapper = new DynectWrapper("my_customer_name", "my_user_name", "my_password");
 
             // Add an A record
             wrapper.CreateARecord("my_zone", "my_fqdn", "1.1.1.1", DynectWrapper.TTLSeconds.THIRTY);
 
             // publish the zone
-            wrapper.PublishZone("my_zone");*/
+            wrapper.PublishZone("my_zone");
 
             // create the object from the imported wsdl which should appear in your project as a web reference
-            net.dynect.api2.Dynect dynectWsdl = null;
+            /*net.dynect.api2.Dynect dynectWsdl = null;
 
             dynectWsdl = new CSharpDllTest.net.dynect.api2.Dynect();
 
@@ -80,7 +80,7 @@ namespace CSharpDllTest
             net.dynect.api2.PublishZoneResponseType pubResponse = dynectWsdl.PublishZone(pubRequest);
 
             // get the response
-            net.dynect.api2.ZoneData pubRetVal = pubResponse.data;
+            net.dynect.api2.ZoneData pubRetVal = pubResponse.data;*/
 
         }
     }
